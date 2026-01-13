@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CLG Project - Dashboard</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  }
+  .card:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(1.1);
+  }
+  .card h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+</style>
+</head>
+<body>
+
+<header>Welcome to CLG Dashboard</header>
+
+<main>
+  <div class="card" onclick="location.href='notes.html'">
+    <h3>Notes</h3>
+    <p>Download Year-wise Notes</p>
+  </div>
+  <div class="card" onclick="location.href='toppers.html'">
+    <h3>Toppers</h3>
+    <p>See College Toppers</p>
+  </div>
+  <div class="card" onclick="location.href='events.html'">
+    <h3>Events</h3>
+    <p>Upcoming & Past Events</p>
+  </div>
+  <div class="card" onclick="location.href='placements.html'">
+    <h3>Placements</h3>
+    <p>Company Visits & Offers</p>
+  </div>
+</main>
+
+</body>
+</html>
