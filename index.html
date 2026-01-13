@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus SkillHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .dark-mode {
+            background: #121212 !important;
+            color: #f5f5f5 !important;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .btn-custom {
+            background-color: white;
+            color: #2575fc;
+            border-radius: 25px;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #ffcc00;
+            color: black;
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+
+    <!-- College Logo & Name -->
+    <img src="logo-chamraua-transparent.png" alt="College Logo" class="logo">
+    <h1 class="fw-bold">Chamraua Polytechnic</h1>
+    <p class="lead">One Stop for Notes, events & Placements</p>
+
+    <!-- Quick Links -->
+    <div>
+        <a href="4th.html" class="btn btn-custom">📚 Notes</a>
+        <a href="5th.html" class="btn btn-custom">🎯 toppers</a>
+        <a href="7th.html" class="btn btn-custom">💼 Placements</a>
+        <a href="6th.html" class="btn btn-custom">📢 Events</a>
+        <a href="3rd.html"class="btn btn-custom"></a>
+        <a href="8th.html" class="btn btn-custom">Student Information</a>
+        <a href="9th.html" class="btn btn-custom">College Information</a>
+        
+    </div>
+
+    <!-- Login Button -->
+    <a href="2nd.html" class="btn btn-warning mt-3 fw-bold">🔐 Login / Signup</a><br>
+    <h3> Project By Ishita Saxena </h3>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
