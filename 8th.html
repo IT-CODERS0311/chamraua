@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>student information </title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #11998e;
+    margin-bottom: 40px;
+  }
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #11998e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0b665d;
+  }
+</style>
+</head>
+<body>
+
+<h1>student data</h1>
+
+<div class="profile-container">
+  <form action="#" method="POST">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" value="Ishita Saxena" required />
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" value="ishita@example.com" required />
+    
+    <label for="year">Year</label>
+    <input type="text" id="year" name="year" placeholder="Your current year" value="2nd Year" required /><br><br>
+     <b>Enrollment number:<input type="box"><br><br>
+     Date of birth:<input type="box"><br></b>
+     
+    
+    <button type="submit">Update Profile</button>
+  </form>
+</div>
+
+</body>
+</html>
