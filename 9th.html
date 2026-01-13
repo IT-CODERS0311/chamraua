@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CLG Project - About & Contact</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #333;
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  h1, h2 {
+    color: #11998e;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .about-section, .contact-section {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  form button {
+    margin-top: 25px;
+    padding: 12px 0;
+    width: 100%;
+    background-color: #11998e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover {
+    background-color: #0b665d;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>About Chamraua Polytechnic</h1>
+  <section class="about-section">
+    <p>
+      Chamraua Polytechnic is dedicated to providing quality technical education to students with a focus on practical learning and industry readiness. Our campus offers modern facilities, experienced faculty, and a supportive environment.
+    </p>
+    <p>
+      We aim to empower students with skills and knowledge to excel in their careers and contribute to society.
+    </p>
+  </section>
+
+  <h2>Contact Us</h2>
+  <section class="contact-section">
+    <p><strong>Address:</strong> Chamraua Polytechnic, Chamraua, India</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> info@chamraua-polytechnic.edu.in</p>
+
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</div>
+
+</body>
+</html>
